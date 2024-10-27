@@ -14,7 +14,9 @@ export default function Header() {
       <section className="flex items-center w-full max-w-5xl mx-auto px-4 bg-primary-foreground/90 backdrop-blur-sm rounded shadow-md shadow-primary/15">
         <Link className="flex items-center justify-center" href="#">
           <Rocket className="h-6 w-6 mr-2 text-primary" />
-          <span className="font-medium bg-gradient-to-r from-primary bg-clip-text text-primary/50">Diego Soluciones Web</span>
+          <span className="font-medium bg-gradient-to-r from-primary bg-clip-text text-primary/50">
+            Diego Soluciones Web
+          </span>
         </Link>
         <nav
           className={`ml-auto flex gap-4 sm:gap-6 ${
