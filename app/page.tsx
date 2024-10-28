@@ -1,6 +1,6 @@
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
-import Features from "@/components/Features";
+import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -13,7 +13,8 @@ export default function Home() {
       <main className="flex flex-col justify-center items-center w-full">
         <Hero />
         <Services />
-        <Features />
+        {/* <Features /> */}
+        <Pricing />
         <FAQ />
         <Contact />
       </main>

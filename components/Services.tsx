@@ -4,6 +4,13 @@ import Image from "next/image";
 import services from "../app/services.png";
 import { TypographyH2, TypographyP } from "./ui/typography";
 // bg-gradient-to-b from-primary
+import {
+  Blocks,
+  MessageCircleQuestion,
+  Workflow,
+  DatabaseZap,
+} from "lucide-react";
+
 export default function Services() {
   return (
     <section id="services" className="flex justify-center w-full">
@@ -17,15 +24,18 @@ export default function Services() {
             gradientColor="#f8fafc"
             gradientOpacity={0.1}
           >
+            <Blocks className="h-8 w-8 ml-auto mr-2 mt-2 text-white" />
             <CardHeader>
               <CardTitle className="text-primary-foreground">
-                Desarrollo de Aplicaciones
+                Desarrollo
               </CardTitle>
             </CardHeader>
             <CardContent>
               <TypographyP>
-                Creo aplicaciones personalizadas utilizando Google AppSheet para
-                satisfacer sus necesidades específicas de negocio.
+                Aplicaciones personalizadas con Google AppSheet para cubrir las
+                necesidades específicas de tu negocio de forma{" "}
+                <span className="font-medium">ágil</span> y{" "}
+                <span className="font-medium">eficaz</span>.
               </TypographyP>
             </CardContent>
           </MagicCard>
@@ -34,13 +44,15 @@ export default function Services() {
             gradientColor="#2563eb"
             gradientOpacity={0.1}
           >
+            <MessageCircleQuestion className="h-8 w-8 ml-auto mr-2 mt-2 text-primary" />
             <CardHeader>
-              <CardTitle>Consultoría No-Code</CardTitle>
+              <CardTitle>Consultoría</CardTitle>
             </CardHeader>
             <CardContent>
               <TypographyP>
-                Ofrezco asesoramiento experto sobre cómo aprovechar al máximo
-                las plataformas no-code para su empresa.
+                Asesoramiento experto sobre cómo aprovechar al{" "}
+                <span className="font-medium">máximo</span> las plataformas
+                no-code para su empresa.
               </TypographyP>
             </CardContent>
           </MagicCard>
@@ -49,13 +61,15 @@ export default function Services() {
             gradientColor="#f8fafc"
             gradientOpacity={0.1}
           >
+            <Workflow className="h-8 w-8 ml-auto mr-2 mt-2 text-white" />
             <CardHeader>
-              <CardTitle>Integración y Automatización</CardTitle>
+              <CardTitle>Integración</CardTitle>
             </CardHeader>
             <CardContent>
               <TypographyP>
-                Conecto sus aplicaciones AppSheet con otros servicios y
-                automatizo sus procesos de negocio.
+                Conecto aplicaciones AppSheet con otros servicios,
+                <span className="font-medium">automatizando</span> los procesos
+                de negocio.
               </TypographyP>
             </CardContent>
           </MagicCard>
@@ -65,14 +79,16 @@ export default function Services() {
             gradientColor="#2563eb"
             gradientOpacity={0.1}
           >
+            <DatabaseZap className="h-8 w-8 ml-auto mr-2 mt-2 text-primary" />
             <CardHeader>
-              <CardTitle>Análisis y Optimización de Datos</CardTitle>
+              <CardTitle>Mantencion</CardTitle>
             </CardHeader>
             <CardContent>
               <TypographyP>
-                Transformo sus datos en información valiosa mediante
-                herramientas de Google, mejorando la toma de decisiones y
-                optimizando el rendimiento de su negocio.
+                Actualización continua de aplicaciones, asegurando un
+                rendimiento <span className="font-medium">óptimo</span> y{" "}
+                <span className="font-medium">adaptándose</span> a las
+                necesidades cambiantes de tu negocio.
               </TypographyP>
             </CardContent>
           </MagicCard>
