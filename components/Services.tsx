@@ -18,7 +18,7 @@ export default function Services() {
         <TypographyH2 className="bg-gradient-to-r from-gray-900 to-gray-500 bg-clip-text text-transparent">
           Servicios
         </TypographyH2>
-        <div className="grid gap-6 lg:grid-cols-3 mt-10">
+        <div className="grid place-content-center gap-6 lg:grid-cols-3 mt-10">
           <MagicCard
             className="bg-primary text-primary-foreground"
             gradientColor="#f8fafc"
@@ -73,7 +73,7 @@ export default function Services() {
               </TypographyP>
             </CardContent>
           </MagicCard>
-          <Image src={services} alt="imagen" className="lg:col-span-2 " />
+          <Image src={services} alt="imagen" className="order-last col-span-1 md:col-span-2 lg:order-none " />
           <MagicCard
             className="bg-secondary text-secondary-foreground"
             gradientColor="#2563eb"
