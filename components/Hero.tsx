@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { TypographyH1, TypographyH3 } from "@/components/ui/typography";
+import { TypographyH1, TypographyLead } from "@/components/ui/typography";
+import appsheet from "@/public/images/appsheet.png";
+import google from "@/public/images/google.png";
 import { ArrowRight, Rocket } from "lucide-react";
 import Image from "next/image";
-import appsheet from "../app/appsheet.png";
-import google from "../app/google.png";
 import UnderlineSvg from "./icons/UnderlineSvg";
 
 export default function Hero() {
   return (
-    <section className="w-full max-w-5xl px-6 pb-32 pt-48 text-center">
+    <section className="flex flex-col justify-center items-center w-full max-w-5xl min-h-dvh px-2 sm:px-6 text-center pt-4">
       <TypographyH1 className="text-secondary-foreground">
         Crece con{" "}
         <span className="relative whitespace-nowrap">
@@ -19,7 +19,7 @@ export default function Hero() {
         </span>{" "}
         diseñadas para tu negocio
       </TypographyH1>
-      <TypographyH3 className="max-w-2xl mx-auto mt-8 text-secondary-foreground">
+      <TypographyLead className="max-w-2xl mt-8 sm:text-2xl">
         Desarrollo a la medida utilizando el ecosistema de{" "}
         <span className="text-blue-600">G</span>
         <span className="text-red-600">o</span>
@@ -28,8 +28,8 @@ export default function Hero() {
         <span className="text-green-600">l</span>
         <span className="text-red-600">e</span> y{" "}
         <span className="text-[#5f6368]">AppSheet.</span>
-      </TypographyH3>
-      <div className="flex justify-center gap-4 mt-8">
+      </TypographyLead>
+      <div className="flex justify-center gap-4 mt-10">
         <Button className="w-[162px]">
           Empezar ahora
           <ArrowRight className="h-4 w-4" />

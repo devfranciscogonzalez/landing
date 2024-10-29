@@ -1,7 +1,7 @@
 import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MagicCard } from "@/components/ui/magic-card";
 import Image from "next/image";
-import services from "../app/services.png";
+import services from "@/public/images/services.png";
 import { TypographyH2, TypographyP } from "./ui/typography";
 // bg-gradient-to-b from-primary
 import {

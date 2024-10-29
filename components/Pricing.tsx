@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 import { TypographyH2 } from "./ui/typography";
+import { MagicCard } from "./ui/magic-card";
 
 export default function Pricing() {
   const plans = [
@@ -61,10 +62,14 @@ export default function Pricing() {
             </p> */}
         <div className="grid gap-6 lg:grid-cols-3 items-start mt-10">
           {plans.map((plan, index) => (
-            <Card
+            <MagicCard
+              gradientColor={plan.highlighted ? "#2563eb" : "#f8fafc"}
+              gradientOpacity={0.1}
               key={index}
               className={`flex flex-col bg-transparent text-primary-foreground${
-                plan.highlighted ? "border-[#1a73e8] shadow-lg bg-primary-foreground h-full" : ""
+                plan.highlighted
+                  ? "border-[#1a73e8] shadow-lg bg-primary-foreground h-full"
+                  : ""
               }  border-none`}
             >
               <CardHeader>
@@ -78,14 +83,12 @@ export default function Pricing() {
                     {plan.price !== "Personalizado" && "$"}
                     {plan.price}
                   </span>
-                  {plan.price !== "Personalizado" && (
-                    <span className="text-gray-600">USD</span>
-                  )}
+                  {plan.price !== "Personalizado" && <span> USD</span>}
                 </div>
                 <ul className="space-y-2">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center">
-                      <CheckCircle className="mr-2 h-5 w-5 text-[#1a73e8]" />
+                      <CheckCircle className="mr-2 h-5 w-5" />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -93,14 +96,13 @@ export default function Pricing() {
               </CardContent>
               <CardFooter>
                 <Button
-                  className={`w-full ${
-                    plan.highlighted ? "bg-[#1a73e8] hover:bg-blue-700" : ""
-                  }`}
+                  variant={plan.highlighted ? "destructive" : "secondary"}
+                  className="w-full"
                 >
-                  {plan.cta}
+                  Contactar
                 </Button>
               </CardFooter>
-            </Card>
+            </MagicCard>
           ))}
         </div>
       </div>
