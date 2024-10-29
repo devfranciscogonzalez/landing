@@ -9,7 +9,7 @@ export function TypographyH1({ children, className }: TypographyProps) {
   return (
     <h1
       className={cn(
-        "scroll-m-20 text-4xl font-medium tracking-tight sm:text-5xl lg:text-7xl",
+        "scroll-m-20 text-5xl font-medium leading-[3.5rem] tracking-tight sm:text-5xl lg:text-7xl",
         className
       )}
     >

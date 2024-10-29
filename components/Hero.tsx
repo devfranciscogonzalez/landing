@@ -19,7 +19,7 @@ export default function Hero() {
         </span>{" "}
         diseñadas para tu negocio
       </TypographyH1>
-      <TypographyLead className="max-w-2xl mt-8 sm:text-2xl">
+      <TypographyLead className="max-w-2xl mt-4 sm:text-2xl sm:mt-8">
         Desarrollo a la medida utilizando el ecosistema de{" "}
         <span className="text-blue-600">G</span>
         <span className="text-red-600">o</span>
@@ -29,7 +29,7 @@ export default function Hero() {
         <span className="text-red-600">e</span> y{" "}
         <span className="text-[#5f6368]">AppSheet.</span>
       </TypographyLead>
-      <div className="flex justify-center gap-4 mt-10">
+      <div className="flex justify-center gap-2 mt-8 sm:mt-10 sm:gap-4">
         <Button className="w-[162px]">
           Empezar ahora
           <ArrowRight className="h-4 w-4" />
@@ -38,7 +38,7 @@ export default function Hero() {
           Saber más
         </Button>
       </div>
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center mt-6 sm:mt-8">
         <div className="flex w-auto gap-4 justify-center">
           <Image src={google} alt="Picture of the author" width={36} />
           <Image src={appsheet} alt="Picture of the author" width={36} />
