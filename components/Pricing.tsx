@@ -1,14 +1,13 @@
 import { Button } from "@/components/ui/button";
 import {
-  Card,
   CardContent,
   CardFooter,
   CardHeader,
-  CardTitle,
+  CardTitle
 } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
-import { TypographyH2 } from "./ui/typography";
 import { MagicCard } from "./ui/magic-card";
+import { TypographyH2 } from "./ui/typography";
 
 export default function Pricing() {
   const plans = [
