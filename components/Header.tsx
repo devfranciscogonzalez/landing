@@ -31,13 +31,13 @@ export default function Header() {
           </Link>
           <Link
             className="text-sm font-light text-secondary-foreground hover:text-primary"
-            href="#features"
+            href="#pricing"
           >
-            Características
+            Precios
           </Link>
           <Link
             className="text-sm font-light text-secondary-foreground hover:text-primary"
-            href="#faq"
+            href="#pricing"
           >
             FAQ
           </Link>

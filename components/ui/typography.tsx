@@ -9,7 +9,7 @@ export function TypographyH1({ children, className }: TypographyProps) {
   return (
     <h1
       className={cn(
-        "scroll-m-20 text-5xl font-medium leading-[3.5rem] tracking-tight sm:text-5xl lg:text-7xl",
+        "scroll-m-20 text-5xl text-balance font-semibold leading-tight tracking-tight sm:text-5xl sm:leading-tight lg:text-7xl lg:leading-tight",
         className
       )}
     >
@@ -22,7 +22,7 @@ export function TypographyH2({ children, className }: TypographyProps) {
   return (
     <h2
       className={cn(
-        "mt-10 scroll-m-20 border-b pb-2 text-5xl font-semibold tracking-tight transition-colors first:mt-0",
+        "mt-10 scroll-m-20 text-4xl text-pretty font-normal leading-tight tracking-tight transition-colors first:mt-0 md:text-5xl md:leading-tight",
         className
       )}
     >
@@ -30,7 +30,6 @@ export function TypographyH2({ children, className }: TypographyProps) {
     </h2>
   );
 }
-
 
 export function TypographyH3({ children, className }: TypographyProps) {
   return (
@@ -45,10 +44,9 @@ export function TypographyH3({ children, className }: TypographyProps) {
   );
 }
 
-
 export function TypographyP({ children, className }: TypographyProps) {
   return (
-    <p className={cn("leading-7 [&:not(:first-child)]:mt-6", className)}>
+    <p className={cn("leading-7 text-pretty [&:not(:first-child)]:mt-6", className)}>
       {children}
     </p>
   );
@@ -72,8 +70,13 @@ export function TypographyList({ children, className }: TypographyProps) {
 
 export function TypographyLead({ children, className }: TypographyProps) {
   return (
-    <p className={cn("text-xl text-secondary-foreground font-light tracking-tight", className)}>
-        {children}
+    <p
+      className={cn(
+        "text-xl text-secondary-foreground font-light tracking-tight",
+        className
+      )}
+    >
+      {children}
     </p>
-  )
+  );
 }

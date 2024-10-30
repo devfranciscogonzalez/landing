@@ -51,9 +51,9 @@ export default function Pricing() {
   ];
 
   return (
-    <section className="flex justify-center w-full px-6 pb-32 pt-48 text-center bg-primary">
+    <section id="pricing" className="flex justify-center w-full px-6 pb-32 pt-48 text-center bg-primary">
       <div className="w-full max-w-5xl px-4 md:px-6">
-        <TypographyH2 className="bg-gradient-to-r from-primary-foreground bg-clip-text text-transparent">
+        <TypographyH2 className="bg-gradient-to-l from-slate-300 to-white bg-clip-text text-transparent">
           Precios
         </TypographyH2>
         {/* <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl text-center mb-12">
