@@ -8,6 +8,8 @@ import { MagicCard } from "@/components/ui/magic-card";
 import Image from "next/image";
 import services from "@/public/images/services.png";
 import { TypographyH2, TypographyLead, TypographyP } from "./ui/typography";
+import { Zap } from "lucide-react";
+import dev from "@/public/images/dev.png";
 // bg-gradient-to-b from-primary
 import {
   Blocks,
@@ -15,32 +17,33 @@ import {
   Workflow,
   DatabaseZap,
 } from "lucide-react";
+import { Badge } from "./ui/badge";
 
 const keywords = {
   development: [
-    "customization",
-    "agility",
-    "optimization",
-    "scalability",
-    "innovation",
+    "personalización",
+    "agilidad",
+    "optimización",
+    "escalabilidad",
+    "innovación",
   ],
   consulting: [
-    "cost reduction",
-    "agility in development",
-    "strategic focus",
-    "leveraging no-code technology",
+    "reducción de costos",
+    "agilidad en el desarrollo",
+    "enfoque estratégico",
+    "aprovechamiento de tecnología no-code",
   ],
   integration: [
-    "automation",
-    "connectivity",
-    "operational efficiency",
-    "digital synergy",
+    "automatización",
+    "conectividad",
+    "eficiencia operativa",
+    "sinergia digital",
   ],
   maintenance: [
-    "service continuity",
-    "failure prevention",
-    "technical support",
-    "continuous improvement",
+    "continuidad del servicio",
+    "prevención de fallos",
+    "soporte técnico",
+    "mejora continua",
   ],
 };
 
@@ -55,7 +58,7 @@ export default function Services() {
           El paso definitivo hacia la transformación digital.
         </TypographyH2>
         <TypographyLead className="mt-4 text-secondary-foreground">
-          Servicios para empresas y particulares que impulsarán tu negocio al
+          Servicios para empresas y particulares que impulsan tu negocio al
           siguiente nivel.
         </TypographyLead>
       </div>
@@ -70,22 +73,16 @@ export default function Services() {
             <CardTitle className="text-primary-foreground">
               Desarrollo
             </CardTitle>
-            {/* <CardDescription className="text-secondary">
-              Software a medida que responda a las necesidades del negocio.
-            </CardDescription> */}
           </CardHeader>
           <CardContent>
             <TypographyP>
-              Software a medida que responda a las necesidades del negocio.
+              Software a medida que escala contigo y optimizan tus procesos.
             </TypographyP>
-            {/* {keywords.development.map((keyword) => (
-              <span
-                key={keyword}
-                className="text-xs bg-primary-foreground/10 px-2 py-1 rounded mr-2"
-              >
-                {keyword}
-              </span>
-            ))} */}
+            {/* <div className="flex flex-wrap mt-4 gap-1">
+              {keywords.development.map((keyword) => (
+                <Badge variant="secondary" key={keyword} className="bg-white text-primary">{keyword}</Badge>
+              ))}
+            </div> */}
           </CardContent>
         </MagicCard>
         <MagicCard
@@ -115,7 +112,8 @@ export default function Services() {
           </CardHeader>
           <CardContent>
             <TypographyP>
-              Conecto aplicaciones AppSheet con otros servicios.
+              Conecta tus aplicaciones y mejora la eficiencia de tu negocio
+              mediante integraciones rápidas y seguras.
             </TypographyP>
           </CardContent>
         </MagicCard>
