@@ -1,51 +1,14 @@
-import {
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MagicCard } from "@/components/ui/magic-card";
-import Image from "next/image";
 import services from "@/public/images/services.png";
-import { TypographyH2, TypographyLead, TypographyP } from "./ui/typography";
-import { Zap } from "lucide-react";
-import dev from "@/public/images/dev.png";
-// bg-gradient-to-b from-primary
 import {
   Blocks,
-  MessageCircleQuestion,
-  Workflow,
   DatabaseZap,
+  MessageCircleQuestion,
+  Workflow
 } from "lucide-react";
-import { Badge } from "./ui/badge";
-
-const keywords = {
-  development: [
-    "personalización",
-    "agilidad",
-    "optimización",
-    "escalabilidad",
-    "innovación",
-  ],
-  consulting: [
-    "reducción de costos",
-    "agilidad en el desarrollo",
-    "enfoque estratégico",
-    "aprovechamiento de tecnología no-code",
-  ],
-  integration: [
-    "automatización",
-    "conectividad",
-    "eficiencia operativa",
-    "sinergia digital",
-  ],
-  maintenance: [
-    "continuidad del servicio",
-    "prevención de fallos",
-    "soporte técnico",
-    "mejora continua",
-  ],
-};
+import Image from "next/image";
+import { TypographyH2, TypographyLead, TypographyP } from "./ui/typography";
 
 export default function Services() {
   return (
@@ -78,11 +41,6 @@ export default function Services() {
             <TypographyP>
               Software a medida que escala contigo y optimizan tus procesos.
             </TypographyP>
-            {/* <div className="flex flex-wrap mt-4 gap-1">
-              {keywords.development.map((keyword) => (
-                <Badge variant="secondary" key={keyword} className="bg-white text-primary">{keyword}</Badge>
-              ))}
-            </div> */}
           </CardContent>
         </MagicCard>
         <MagicCard
@@ -112,8 +70,7 @@ export default function Services() {
           </CardHeader>
           <CardContent>
             <TypographyP>
-              Conecta tus aplicaciones y mejora la eficiencia de tu negocio
-              mediante integraciones rápidas y seguras.
+              Conecta tus aplicaciones y centraliza tu negocio.
             </TypographyP>
           </CardContent>
         </MagicCard>
@@ -133,11 +90,15 @@ export default function Services() {
           </CardHeader>
           <CardContent>
             <TypographyP>
-              Actualización, cambio y modificación de la aplicación, asegurando
-              su correcto funcionamiento.
+              Garantiza el óptimo desempeño de la aplicación y su evolución
+              constante a lo largo del tiempo.
             </TypographyP>
           </CardContent>
         </MagicCard>
+        {/* <TypographyH2 className="text-center mt-10 text-primary-foreground">
+          ¿Quieres saber más sobre nuestros servicios?
+        </TypographyH2> */}
+
       </div>
     </section>
   );

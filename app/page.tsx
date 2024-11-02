@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import SuccessStories from "@/components/SuccessStories";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <Services />
         {/* <Features /> */}
+        <SuccessStories />
         <Pricing />
         <FAQ />
         <Contact />
