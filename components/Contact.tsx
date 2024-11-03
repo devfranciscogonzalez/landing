@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Send } from "lucide-react";
+import ContactForm from "./ContactForm";
+import EmailCopy from "./EmailCopy";
 import { TypographyH2, TypographyLead, TypographyP } from "./ui/typography";
 
 export default function Contact() {
@@ -11,32 +9,12 @@ export default function Contact() {
       className="flex w-full max-w-5xl py-12 md:py-24 lg:py-32"
     >
       <div className="w-5/12 px-4 md:px-6">
-        <div className="mx-auto max-w-lg">
-          <form className="space-y-4">
-            <Input placeholder="Nombre" />
-            <Input type="email" placeholder="Email" />
-            <Textarea placeholder="Mensaje" />
-            <Button className="w-full">
-              Enviar mensaje
-              <Send className="ml-2 h-4 w-4" />
-            </Button>
-          </form>
-        </div>
+        <ContactForm />
         <TypographyP>
           Si prefieres, puedes escribirme directamente al siguiente correo
           electrónico:
         </TypographyP>
-        <div>
-          <Button variant="secondary" className="mt-4">
-            franciscogonzalez
-          </Button>
-          <div>
-            <Button variant="" className="mt-4">
-            </Button>
-            <Button variant="secondary" className="mt-4">
-            </Button>
-          </div>
-        </div>
+        <EmailCopy />
       </div>
       <div className="w-7/12 px-4 md:px-6">
         <TypographyP>Contáctanos</TypographyP>
