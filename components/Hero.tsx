@@ -20,14 +20,14 @@ export default function Hero() {
         diseñadas para tu negocio
       </TypographyH1>
       <TypographyLead className="max-w-2xl mt-4 sm:text-2xl sm:mt-8">
-        Desarrollo a la medida utilizando el ecosistema de{" "}
+        Desarrollo de software a la medida utilizando el ecosistema de{" "}
         <span className="text-blue-600">G</span>
         <span className="text-red-600">o</span>
         <span className="text-yellow-500">o</span>
         <span className="text-blue-600">g</span>
         <span className="text-green-600">l</span>
         <span className="text-red-600">e</span> y{" "}
-        <span className="text-[#5f6368]">AppSheet.</span>
+        AppSheet.
       </TypographyLead>
       <div className="flex justify-center gap-2 mt-8 sm:mt-10 sm:gap-4">
         <Button className="w-[162px]">
