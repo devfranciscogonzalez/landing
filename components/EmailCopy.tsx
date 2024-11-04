@@ -33,7 +33,7 @@ export default function EmailCopy() {
   };
 
   return (
-    <div className="flex items-center border rounded-md p-1 h-10">
+    <div className="flex items-center border rounded-md p-1 h-10 mt-4">
       <Button
         variant="link"
         onClick={copyToClipboard}
