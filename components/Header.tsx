@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { label } from "framer-motion/client";
 import { Menu, Rocket, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -27,7 +26,7 @@ const sections = [
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // outline outline-offset-1 outline-1 outline-primary
+
   return (
     <header className="flex w-full fixed px-4 lg:px-6 pt-4 min-h-16 z-50">
       <div className="absolute top-0 left-0 w-full h-4 backdrop-blur-sm"></div>
