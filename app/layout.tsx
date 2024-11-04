@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Lexend } from "next/font/google";
-import Header from "@/components/Header";
+import Header from "@/components/sections/Header";
 
 const lexend = Lexend({ subsets: ["latin"] });
 

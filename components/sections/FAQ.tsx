@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { TypographyH2, TypographyLead, TypographyP } from "./ui/typography";
+import { TypographyH2, TypographyLead, TypographyP } from "@/components/ui/typography";
 
 export default function FAQ() {
   return (
@@ -100,7 +100,7 @@ export default function FAQ() {
           >
             <AccordionTrigger>¿Qué medios de pago aceptas?</AccordionTrigger>
             <AccordionContent>
-              Acepto una  variedad de medios de pago, incluyendo transferencias
+              Acepto una variedad de medios de pago, incluyendo transferencias
               bancarias, tarjetas de crédito y débito, y otras opciones
               populares. Mi objetivo es facilitar el proceso de pago para que
               sea conveniente para ti.

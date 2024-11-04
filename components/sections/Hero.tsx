@@ -1,10 +1,10 @@
+import UnderlineSvg from "@/components/icons/UnderlineSvg";
 import { Button } from "@/components/ui/button";
 import { TypographyH1, TypographyLead } from "@/components/ui/typography";
 import appsheet from "@/public/images/appsheet.png";
 import google from "@/public/images/google.png";
 import { ArrowRight, Rocket } from "lucide-react";
 import Image from "next/image";
-import UnderlineSvg from "./icons/UnderlineSvg";
 
 export default function Hero() {
   return (

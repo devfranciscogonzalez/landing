@@ -1,9 +1,9 @@
 import Contact from "@/components/Contact";
-import FAQ from "@/components/FAQ";
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+import FAQ from "@/components/sections/FAQ";
+import Footer from "@/components/sections/Footer";
+import Hero from "@/components/sections/Hero";
 import Pricing from "@/components/Pricing";
-import Services from "@/components/Services";
+import Services from "@/components/sections/Services";
 import SuccessStories from "@/components/SuccessStories";
 import WhatsAppAnchor from "@/components/WhatsAppAnchor";
 // import WhatsAppAnchor from "@/components/WhatsAppAnchor";

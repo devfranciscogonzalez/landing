@@ -1,5 +1,6 @@
 import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MagicCard } from "@/components/ui/magic-card";
+import { TypographyH2, TypographyLead, TypographyP } from "@/components/ui/typography";
 import services from "@/public/images/services.png";
 import {
   Blocks,
@@ -8,7 +9,6 @@ import {
   Workflow
 } from "lucide-react";
 import Image from "next/image";
-import { TypographyH2, TypographyLead, TypographyP } from "./ui/typography";
 
 export default function Services() {
   return (
