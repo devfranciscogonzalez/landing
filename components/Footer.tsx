@@ -1,8 +1,14 @@
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Instagram, Rocket } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram , Rocket } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import { ReactNode } from "react";
 
-const FooterLink = ({ href, children }) => (
+interface FooterLinkProps {
+  href: string;
+  children: ReactNode;
+}
+
+const FooterLink = ({ href, children }: FooterLinkProps) => (
   <Link
     href={href}
     className="text-gray-500 hover:text-blue-600 transition-colors duration-300"
@@ -11,7 +17,12 @@ const FooterLink = ({ href, children }) => (
   </Link>
 );
 
-const SocialIcon = ({ href, icon: Icon }) => (
+interface SocialIconProps {
+  href: string;
+  icon: React.ComponentType<{ className?: string }>;
+}
+
+const SocialIcon = ({ href, icon: Icon }: SocialIconProps) => (
   <Link
     href={href}
     className="text-gray-400 hover:text-blue-600 transition-colors duration-300"
