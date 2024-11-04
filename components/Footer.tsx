@@ -1,12 +1,5 @@
 import Link from "next/link";
-import {
-  Facebook,
-  Twitter,
-  Linkedin,
-  Instagram,
-  Mail,
-  Rocket,
-} from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Rocket } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const FooterLink = ({ href, children }) => (
