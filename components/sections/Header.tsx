@@ -24,13 +24,7 @@ export default function Header() {
           <Logo />
           <div className="flex items-center gap-6">
             <NavigationLinks className="hidden md:flex items-center gap-6" />
-            <Link
-              href="/about"
-              className={cn(
-                "order-first md:order-last",
-                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-              )}
-            >
+            <Link href="/about" className="order-first md:order-last">
               <Button size="sm">
                 Sobre Mí
                 <User strokeWidth={3} />
@@ -53,7 +47,7 @@ export default function Header() {
           </div>
         </div>
         {isMenuOpen && (
-          <NavigationLinks className="flex flex-col items-center gap-3 pb-4 pt-7 md:hidden" />
+          <NavigationLinks className="flex flex-col items-center gap-6 pb-4 pt-7 md:hidden" />
         )}
       </section>
     </header>
