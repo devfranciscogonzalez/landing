@@ -1,50 +1,47 @@
 import UnderlineSvg from "@/components/icons/UnderlineSvg";
 import { Button } from "@/components/ui/button";
 import { TypographyH1, TypographyLead } from "@/components/ui/typography";
-import appsheet from "@/public/images/appsheet.png";
-import google from "@/public/images/google.png";
-import { ArrowRight, Rocket } from "lucide-react";
-import Image from "next/image";
+import { TECHNOLOGY_ICONS } from "@/constants/constants";
+import { ArrowRight } from "lucide-react";
+import TechnologyIcons from "@/components/TechnologyIcons";
+import GoogleText from "@/components/GoogleText";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col justify-center items-center w-full max-w-5xl min-h-dvh px-2 sm:px-6 text-center pt-4">
+    <section className="flex min-h-dvh w-full max-w-5xl flex-col items-center justify-center px-2 pt-4 text-center sm:px-6">
       <TypographyH1 className="text-secondary-foreground">
-        Crece con{" "}
+        Crece con
         <span className="relative whitespace-nowrap">
-          <UnderlineSvg className="absolute -bottom-1 left-0 w-full text-primary rotate-180" />
+          <UnderlineSvg
+            className="absolute -bottom-1 left-0 w-full rotate-180 text-primary"
+            aria-hidden="true"
+          />
           <span className="bg-gradient-to-r from-primary bg-clip-text text-primary/50">
             soluciones
           </span>
         </span>{" "}
         diseñadas para tu negocio
       </TypographyH1>
-      <TypographyLead className="max-w-2xl mt-4 sm:text-2xl sm:mt-8">
+      <TypographyLead className="mt-4 max-w-2xl sm:mt-8 sm:text-2xl">
         Desarrollo de software a la medida utilizando el ecosistema de{" "}
-        <span className="text-blue-600">G</span>
-        <span className="text-red-600">o</span>
-        <span className="text-yellow-500">o</span>
-        <span className="text-blue-600">g</span>
-        <span className="text-green-600">l</span>
-        <span className="text-red-600">e</span> y{" "}
-        AppSheet.
+        <GoogleText /> y AppSheet.
       </TypographyLead>
-      <div className="flex justify-center gap-2 mt-8 sm:mt-10 sm:gap-4">
-        <Button className="w-[162px]">
+      <div className="mt-8 flex justify-center gap-2 sm:mt-10 sm:gap-4">
+        <Button
+          className="w-[162px]"
+        >
           Empezar ahora
-          <ArrowRight className="h-4 w-4" />
+          <ArrowRight className="h-4 w-4 ml-2" />
         </Button>
-        <Button variant="secondary" className="w-[162px]">
+        <Button
+          variant="secondary"
+          className="w-[162px]"
+        >
           Saber más
         </Button>
       </div>
-      <div className="flex justify-center mt-6 sm:mt-8">
-        <div className="flex w-auto gap-4 justify-center">
-          <Image src={google} alt="Picture of the author" width={36} />
-          <Image src={appsheet} alt="Picture of the author" width={36} />
-          <Rocket className="h-9 w-9 text-primary" />
-        </div>
-      </div>
+
+      <TechnologyIcons icons={TECHNOLOGY_ICONS} className="mt-6 sm:mt-8" />
     </section>
   );
 }

@@ -11,7 +11,7 @@ export const NavigationLinks = ({ className }: NavigationLinksProps) => (
       <Link
         key={item.href}
         href={`/#${item.href}`}
-        className="text-sm font-light text-secondary-foreground hover:text-primary transition-colors duration-200"
+        className="text-sm font-light text-secondary-foreground hover:text-primary transition-colors duration-200 hover:font-normal"
       >
         {item.label}
       </Link>

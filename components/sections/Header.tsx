@@ -24,12 +24,12 @@ export default function Header() {
           <Logo />
           <div className="flex items-center gap-6">
             <NavigationLinks className="hidden md:flex items-center gap-6" />
-            <Link href="/about" className="order-first md:order-last">
-              <Button size="sm">
+            <Button asChild size="sm" className="order-first md:order-last">
+              <Link href="/about">
                 Sobre Mí
                 <User strokeWidth={3} />
-              </Button>
-            </Link>
+              </Link>
+            </Button>
             <Button
               variant="ghost"
               size="icon"
